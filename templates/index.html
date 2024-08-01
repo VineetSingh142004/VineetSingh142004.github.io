@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Aluminium Price Prediction</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css') }}" />
+    </head>
+    <body class="is-preload">
+
+        <!-- Wrapper -->
+        <div id="wrapper">
+
+            <!-- Main -->
+            <div id="main">
+                <div class="inner">
+
+                    <!-- Header -->
+                    <header id="header">
+                        <a href="index.html" class="logo"><strong>Aluminium</strong> Price Predictor</a>
+                        <ul class="icons">
+                            <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                            <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                            <li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
+                            <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                        </ul>
+                    </header>
+
+                    <!-- Banner -->
+                    <section id="banner">
+                        <div class="content">
+                            <header>
+                                <h1>Hi, I’m Aluminium Price Predictor</h1>
+                                <p>Aluminium price prediction</p>
+                            </header>
+                            <p>Predit the price of Aluminium using this application, just put date and you'll get graph along with the data in tabular form.</p>
+                            <form action="/result" method="post">
+                                <label for="date">Date:</label>
+                                <input type="date" id="date" name="date" min="2008-01-01">
+                                <br><br>
+                                <button type="submit" class="button big">PREDICT</button>
+                            </form>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div id="sidebar">
+                <div class="inner">
+                    <!-- Menu -->
+                    <nav id="menu">
+                        <header class="major">
+                            <h2>MENU</h2>
+                        </header>
+                        <ul>
+                            <li><a href="index.html">Homepage</a></li>
+                        </ul>
+                    </nav>
+                    <!-- Section -->
+                    <section>
+                        <header class="major">
+                            <h2>GET IN TOUCH</h2>
+                        </header>
+                        <p>Aluminium Price Prediction using python script, just select a date and you'll get the prediction for the given date.</p>
+                        <ul class="contact">
+                            <li class="icon solid fa-envelope"><a href="#">vsingh@knox.edu</a></li>
+                            <li class="icon solid fa-phone">+1 (309) 315-0283</li>
+                            <li class="icon solid fa-home">Knox-1693, 2 E. South St.<br />
+                                Galesburg, IL 61401</li>
+                        </ul>
+                    </section>
+
+                    <!-- Footer -->
+                    <footer id="footer">
+                        <p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+                    </footer>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Scripts -->
+        <script src="{{ url_for('static', filename='assets/js/jquery.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='assets/js/browser.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='assets/js/breakpoints.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='assets/js/util.js') }}"></script>
+        <script src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
+
+    </body>
+</html>
